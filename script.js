@@ -1,35 +1,55 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     const btnEntrar = document.querySelector('.btn-primary');
     const btnGoogle = document.querySelector('.btn-google');
-    
     if (btnEntrar && btnGoogle) {
-        btnEntrar.addEventListener('click', () => {
-            window.location.href = 'dashboard.html';
-        });
-        btnGoogle.addEventListener('click', () => {
-            window.location.href = 'dashboard.html';
-        });
+        btnEntrar.addEventListener('click', () => { window.location.href = 'dashboard.html'; });
+        btnGoogle.addEventListener('click', () => { window.location.href = 'dashboard.html'; });
+    }
+
+    const settingsBtn = document.querySelector('.settings-btn');
+    if (settingsBtn) {
+        settingsBtn.addEventListener('click', () => { window.location.href = 'ajustes.html'; });
     }
 
     const backToLoginBtn = document.querySelector('.back-to-login');
     if (backToLoginBtn) {
-        backToLoginBtn.addEventListener('click', () => {
-            window.location.href = 'index.html';
-        });
+        backToLoginBtn.addEventListener('click', () => { window.location.href = 'index.html'; });
     }
 
     const tvCard = document.querySelector('.favorite-card');
     if (tvCard) {
-        tvCard.addEventListener('click', () => {
-            window.location.href = 'control-tv.html';
-        });
+        tvCard.addEventListener('click', () => { window.location.href = 'control-tv.html'; });
+    }
+
+    const sleepCard = document.querySelector('.sleep-card');
+    if (sleepCard) {
+        sleepCard.addEventListener('click', () => { window.location.href = 'entorno-sueno.html'; });
     }
 
     const backBtnControl = document.querySelector('.back-btn');
     if (backBtnControl) {
-        backBtnControl.addEventListener('click', () => {
-            window.location.href = 'dashboard.html';
-        });
+        backBtnControl.addEventListener('click', () => { window.location.href = 'dashboard.html'; });
     }
+
+    const btnSeguir = document.querySelector('.btn-seguir');
+    if (btnSeguir) {
+        btnSeguir.addEventListener('click', () => { window.location.href = 'dashboard.html'; });
+    }
+
+    const btnApagar = document.querySelector('.btn-apagar');
+    if (btnApagar) {
+        btnApagar.addEventListener('click', () => { window.location.href = 'index.html'; });
+    }
+
+    const navItems = document.querySelectorAll('.nav-item');
+    navItems.forEach(item => {
+        if (item.textContent.includes('Hogar')) {
+            item.style.cursor = 'pointer';
+            item.addEventListener('click', () => {
+                window.location.href = 'dashboard.html';
+            });
+        }
+    });
+
 });

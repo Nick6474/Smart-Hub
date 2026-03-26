@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart-Hub - Ajustes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mobile-container">
+        <div class="main-curve-background dashboard-curve">
+            <header class="top-bar">
+                <div class="status-bar-mock">
+                    <span>9:30</span>
+                    <div class="status-icons">
+                        <i class="fa-solid fa-signal"></i>
+                        <i class="fa-solid fa-wifi"></i>
+                        <i class="fa-solid fa-battery-full"></i>
+                    </div>
+                </div>
+            </header>
+
+            <main class="dashboard-content">
+                <h2 class="section-title text-center" style="text-align: center; margin-bottom: 20px;">Ajustes</h2>
+                
+                <div class="settings-container">
+                    
+                    <div class="setting-card row-layout">
+                        <div class="setting-col">
+                            <span>Sonido</span>
+                            <i class="fa-solid fa-volume-high large-icon"></i>
+                        </div>
+                        <div class="setting-col center-arrows">
+                            <i class="fa-solid fa-chevron-up"></i>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="setting-col">
+                            <i class="fa-solid fa-sliders large-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="setting-card col-layout">
+                        <span style="align-self: flex-start; margin-bottom: 10px;">Imagen</span>
+                        <div class="pill-group">
+                            <div class="outline-pill">Nitidez</div>
+                            <div class="outline-pill">Color</div>
+                            <div class="outline-pill">Calidez</div>
+                        </div>
+                        <i class="fa-solid fa-sliders" style="margin-top: 10px;"></i>
+                    </div>
+
+                    <div class="setting-card col-layout">
+                        <span style="align-self: flex-start;">Tamaño de letra</span>
+                        <div class="font-size-control">
+                            <i class="fa-solid fa-chevron-up"></i>
+                            <span class="number-large">50</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="setting-card row-layout" style="align-items: flex-end;">
+                        <div class="setting-col" style="align-items: flex-start; gap: 15px;">
+                            <span>Idioma</span>
+                            <span style="font-size: 14px;">Español (españa) <i class="fa-solid fa-chevron-down" style="margin-left:5px;"></i></span>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+
+        <nav class="bottom-nav">
+            <div class="nav-item">
+                <i class="fa-solid fa-house nav-icon-plain"></i>
+                <span>Hogar</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-solid fa-sitemap nav-icon-plain"></i>
+                <span>Dispositivos</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-solid fa-file-lines nav-icon-plain"></i>
+                <span>Vida</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-regular fa-circle-play nav-icon-plain"></i>
+                <span>Rutina</span>
+            </div>
+            <div class="nav-item active">
+                <div class="nav-icon-bg dark-blue">
+                    <i class="fa-solid fa-list-ul"></i>
+                </div>
+                <span>Menu</span>
+            </div>
+        </nav>
+        <div class="home-indicator bottom-fixed"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

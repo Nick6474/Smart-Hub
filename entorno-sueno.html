@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart-Hub - Sueño</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mobile-container">
+        <div class="main-curve-background dashboard-curve">
+            <header class="top-bar">
+                <div class="status-bar-mock">
+                    <span>9:30</span>
+                    <div class="status-icons">
+                        <i class="fa-solid fa-signal"></i>
+                        <i class="fa-solid fa-wifi"></i>
+                        <i class="fa-solid fa-battery-full"></i>
+                    </div>
+                </div>
+            </header>
+
+            <main class="dashboard-content" style="height: 100%; display: flex; flex-direction: column;">
+                
+                <div class="sleep-container">
+                    <h2 class="section-title text-center" style="font-size: 24px; line-height: 1.3;">Gracias por usar<br>Smart-Hub</h2>
+                    
+                    <div class="sleep-card-large">
+                        <div class="sleep-icons">
+                            <i class="fa-solid fa-bed"></i>
+                            <i class="fa-regular fa-clock clock-overlay"></i>
+                            <span class="zzz">z<sup>z</sup></span>
+                        </div>
+                        <p class="sleep-text">¡Ten una excelente noche Julia!</p>
+                    </div>
+
+                    <div class="sleep-actions">
+                        <button class="action-dark-btn btn-seguir">
+                            Seguir viendo <i class="fa-solid fa-tv"></i>
+                        </button>
+                        <button class="action-dark-btn btn-apagar">
+                            Apagar <i class="fa-solid fa-power-off"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+        <nav class="bottom-nav">
+            <div class="nav-item">
+                <i class="fa-solid fa-house nav-icon-plain"></i>
+                <span>Hogar</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-solid fa-sitemap nav-icon-plain"></i>
+                <span>Dispositivos</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-solid fa-file-lines nav-icon-plain"></i>
+                <span>Vida</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-regular fa-circle-play nav-icon-plain"></i>
+                <span>Rutina</span>
+            </div>
+            <div class="nav-item">
+                <div class="nav-icon-bg dark-blue">
+                    <i class="fa-solid fa-list-ul"></i>
+                </div>
+                <span>Menu</span>
+            </div>
+        </nav>
+        <div class="home-indicator bottom-fixed"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

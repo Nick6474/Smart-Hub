@@ -155,7 +155,7 @@ body {
     margin: 0 auto;
 }
 
-/*Dashboard styles*/
+/*Estilos del dashboard*/
 :root {
     --bg-outside: #F0F0F0;
     --bg-curve: #E2E6E7;
@@ -507,4 +507,169 @@ body {
     bottom: 8px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+/*Estilos de los ajustes y el entorno de sueño*/
+
+.settings-container {
+    background-color: var(--btn-primary);
+    border: 1px solid var(--text-main);
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-height: 500px;
+    box-shadow: 2px 3px 0px rgba(0,0,0,0.3);
+}
+
+.setting-card {
+    background-color: var(--card-dark);
+    border: 1px solid var(--text-main);
+    border-radius: 12px;
+    padding: 15px;
+    color: white;
+    box-shadow: 1px 2px 0px rgba(0,0,0,0.3);
+    font-size: 12px;
+}
+
+.row-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.setting-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.center-arrows {
+    font-size: 24px;
+    gap: 15px;
+}
+
+.large-icon {
+    font-size: 24px;
+}
+
+.pill-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.outline-pill {
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 4px 10px;
+    font-size: 10px;
+}
+
+.font-size-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+}
+
+.number-large {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.sleep-container {
+    background-color: var(--btn-primary);
+    border: 1px solid var(--text-main);
+    border-radius: 12px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 520px;
+    box-shadow: 2px 3px 0px rgba(0,0,0,0.3);
+}
+
+.sleep-card-large {
+    background-color: var(--card-dark);
+    border: 1px solid var(--text-main);
+    border-radius: 16px;
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    box-shadow: 1px 2px 0px rgba(0,0,0,0.3);
+}
+
+.sleep-icons {
+    position: relative;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-overlay {
+    position: absolute;
+    bottom: -15px;
+    right: -20px;
+    font-size: 40px;
+    background-color: var(--card-dark);
+    border-radius: 50%;
+}
+
+.zzz {
+    position: absolute;
+    top: -10px;
+    right: -30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.sleep-text {
+    font-size: 12px;
+}
+
+.sleep-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+}
+
+.action-dark-btn {
+    background-color: var(--card-dark);
+    color: white;
+    border: 1px solid var(--text-main);
+    border-radius: 20px;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    flex: 1;
+    cursor: pointer;
+    box-shadow: 1px 2px 0px rgba(0,0,0,0.4);
+    transition: transform 0.1s;
+}
+
+.action-dark-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0px 1px 0px rgba(0,0,0,0.4);
 }
