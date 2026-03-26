@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart-Hub - Teclado TV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mobile-container">
+        <div class="main-curve-background dashboard-curve">
+            <header class="top-bar">
+                <div class="status-bar-mock">
+                    <span>9:30</span>
+                    <div class="status-icons">
+                        <i class="fa-solid fa-signal"></i>
+                        <i class="fa-solid fa-wifi"></i>
+                        <i class="fa-solid fa-battery-full"></i>
+                    </div>
+                </div>
+                
+                <div class="dashboard-header">
+                    <div class="header-left">
+                        <i class="fa-solid fa-chevron-left back-btn-teclado" style="cursor: pointer;"></i>
+                        <i class="fa-solid fa-tv"></i>
+                        <span class="home-title">Teclado Numérico</span>
+                    </div>
+                </div>
+            </header>
+
+            <main class="dashboard-content">
+                <div class="remote-container">
+                    
+                    <div class="numpad-display">
+                        <span>12_</span>
+                    </div>
+
+                    <div class="numpad-grid">
+                        <div class="num-key">1</div>
+                        <div class="num-key">2</div>
+                        <div class="num-key">3</div>
+                        <div class="num-key">4</div>
+                        <div class="num-key">5</div>
+                        <div class="num-key">6</div>
+                        <div class="num-key">7</div>
+                        <div class="num-key">8</div>
+                        <div class="num-key">9</div>
+                        <div class="num-key key-action">
+                            <i class="fa-solid fa-delete-left"></i>
+                        </div>
+                        <div class="num-key">0</div>
+                        <div class="num-key key-confirm">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+
+        <nav class="bottom-nav">
+            <div class="nav-item">
+                <i class="fa-solid fa-house nav-icon-plain"></i>
+                <span>Hogar</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-solid fa-sitemap nav-icon-plain"></i>
+                <span>Dispositivos</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-solid fa-file-lines nav-icon-plain"></i>
+                <span>Vida</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-regular fa-circle-play nav-icon-plain"></i>
+                <span>Rutina</span>
+            </div>
+            <div class="nav-item">
+                <div class="nav-icon-bg dark-blue">
+                    <i class="fa-solid fa-list-ul"></i>
+                </div>
+                <span>Menu</span>
+            </div>
+        </nav>
+        <div class="home-indicator bottom-fixed"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

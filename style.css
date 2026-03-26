@@ -673,3 +673,180 @@ body {
     transform: translateY(2px);
     box-shadow: 0px 1px 0px rgba(0,0,0,0.4);
 }
+
+/*Estilos del control*/
+
+.remote-container {
+    background-color: var(--btn-primary);
+    border: 1px solid var(--text-main);
+    border-radius: 12px;
+    padding: 20px 25px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 3px 0px rgba(0,0,0,0.3);
+    margin-top: 10px;
+}
+
+.remote-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.power-btn-large {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--power-red);
+    border: 1px solid var(--text-main);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 1px 2px 0px rgba(0,0,0,0.5);
+    transition: transform 0.1s;
+}
+
+.power-btn-large:active {
+    transform: translateY(2px);
+    box-shadow: 0px 1px 0px rgba(0,0,0,0.5);
+}
+
+.search-icon-large {
+    font-size: 32px;
+    color: var(--card-dark);
+}
+
+.remote-vol-ch {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.dark-pill {
+    background-color: var(--card-dark);
+    border-radius: 20px;
+    width: 65px;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    font-size: 18px;
+    border: 1px solid var(--text-main);
+    box-shadow: 1px 2px 0px rgba(0,0,0,0.3);
+}
+
+.pill-title {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.d-pad-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-pad-outer {
+    width: 200px;
+    height: 200px;
+    background-color: var(--card-dark);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--text-main);
+    box-shadow: 2px 3px 0px rgba(0,0,0,0.3);
+}
+
+.d-pad-inner {
+    width: 75px;
+    height: 75px;
+    background-color: var(--bg-curve);
+    border-radius: 50%;
+    border: 1px solid var(--text-main);
+    box-shadow: inset 1px 2px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.pad-up, .pad-down, .pad-left, .pad-right {
+    position: absolute;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.pad-up { top: 20px; }
+.pad-down { bottom: 20px; }
+.pad-left { left: 20px; }
+.pad-right { right: 20px; }
+
+.remote-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    font-size: 26px;
+    color: var(--card-dark);
+}
+
+/*Estilos del control numerico*/
+.numpad-display {
+    background-color: var(--card-dark);
+    color: white;
+    border: 1px solid var(--text-main);
+    border-radius: 12px;
+    padding: 15px 20px;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: right;
+    margin-bottom: 20px;
+    box-shadow: inset 2px 3px 5px rgba(0,0,0,0.4);
+    letter-spacing: 5px;
+}
+
+.numpad-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px;
+    justify-items: center;
+}
+
+.num-key {
+    width: 65px;
+    height: 65px;
+    background-color: var(--card-dark);
+    color: white;
+    border: 1px solid var(--text-main);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 2px 3px 0px rgba(0,0,0,0.3);
+    transition: transform 0.1s;
+}
+
+.num-key:active {
+    transform: translateY(2px);
+    box-shadow: 0px 1px 0px rgba(0,0,0,0.3);
+}
+
+.key-action {
+    color: var(--power-red);
+    font-size: 20px;
+}
+
+.key-confirm {
+    color: var(--btn-primary);
+    font-size: 24px;
+}

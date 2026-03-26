@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart-Hub - Control TV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mobile-container">
+        <div class="main-curve-background dashboard-curve">
+            <header class="top-bar">
+                <div class="status-bar-mock">
+                    <span>9:30</span>
+                    <div class="status-icons">
+                        <i class="fa-solid fa-signal"></i>
+                        <i class="fa-solid fa-wifi"></i>
+                        <i class="fa-solid fa-battery-full"></i>
+                    </div>
+                </div>
+                
+                <div class="dashboard-header">
+                    <div class="header-left">
+                        <i class="fa-solid fa-chevron-left back-btn" style="cursor: pointer;"></i>
+                        <i class="fa-solid fa-tv"></i>
+                        <span class="home-title">Control Tv</span>
+                    </div>
+                </div>
+            </header>
+
+            <main class="dashboard-content">
+                <div class="remote-container">
+                    
+                    <div class="remote-top">
+                        <button class="power-btn-large">
+                            <i class="fa-solid fa-power-off"></i>
+                        </button>
+                        <i class="fa-solid fa-magnifying-glass search-icon-large" style="cursor: pointer;"></i>
+                    </div>
+
+                    <div class="remote-vol-ch">
+                        <div class="dark-pill">
+                            <span class="pill-title">TV</span>
+                            <i class="fa-solid fa-plus" style="cursor: pointer;"></i>
+                            <i class="fa-solid fa-volume-high"></i>
+                            <i class="fa-solid fa-minus" style="cursor: pointer;"></i>
+                        </div>
+                        <div class="dark-pill">
+                            <span class="pill-title">CH</span>
+                            <i class="fa-solid fa-chevron-up" style="cursor: pointer;"></i>
+                            <span class="ch-number-btn" style="font-size: 14px; font-weight: bold; cursor: pointer;">12</span>
+                            <i class="fa-solid fa-chevron-down" style="cursor: pointer;"></i>
+                        </div>
+                    </div>
+
+                    <div class="d-pad-container">
+                        <div class="d-pad-outer">
+                            <i class="fa-solid fa-chevron-up pad-up"></i>
+                            <i class="fa-solid fa-chevron-right pad-right"></i>
+                            <i class="fa-solid fa-chevron-down pad-down"></i>
+                            <i class="fa-solid fa-chevron-left pad-left"></i>
+                            <div class="d-pad-inner"></div>
+                        </div>
+                    </div>
+
+                    <div class="remote-bottom">
+                        <i class="fa-solid fa-arrow-rotate-left"></i>
+                        <i class="fa-solid fa-house btn-home-tv" style="cursor: pointer;"></i>
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+
+        <nav class="bottom-nav">
+            <div class="nav-item">
+                <i class="fa-solid fa-house nav-icon-plain"></i>
+                <span>Hogar</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-solid fa-sitemap nav-icon-plain"></i>
+                <span>Dispositivos</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-solid fa-file-lines nav-icon-plain"></i>
+                <span>Vida</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-regular fa-circle-play nav-icon-plain"></i>
+                <span>Rutina</span>
+            </div>
+            <div class="nav-item">
+                <div class="nav-icon-bg dark-blue">
+                    <i class="fa-solid fa-list-ul"></i>
+                </div>
+                <span>Menu</span>
+            </div>
+        </nav>
+        <div class="home-indicator bottom-fixed"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

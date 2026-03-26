@@ -42,6 +42,16 @@ document.addEventListener('DOMContentLoaded', () => {
         btnApagar.addEventListener('click', () => { window.location.href = 'index.html'; });
     }
 
+    const chNumberBtn = document.querySelector('.ch-number-btn');
+    if (chNumberBtn) {
+        chNumberBtn.addEventListener('click', () => { window.location.href = 'teclado-tv.html'; });
+    }
+
+    const backBtnTeclado = document.querySelector('.back-btn-teclado');
+    if (backBtnTeclado) {
+        backBtnTeclado.addEventListener('click', () => { window.location.href = 'control-tv.html'; });
+    }
+
     const navItems = document.querySelectorAll('.nav-item');
     navItems.forEach(item => {
         if (item.textContent.includes('Hogar')) {
