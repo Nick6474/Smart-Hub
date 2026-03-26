@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart-Hub - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mobile-container">
+        <div class="main-curve-background dashboard-curve">
+            <header class="top-bar">
+                <div class="status-bar-mock">
+                    <span>9:30</span>
+                    <div class="status-icons">
+                        <i class="fa-solid fa-signal"></i>
+                        <i class="fa-solid fa-wifi"></i>
+                        <i class="fa-solid fa-battery-full"></i>
+                    </div>
+                </div>
+                
+                <div class="dashboard-header">
+                    <div class="header-left">
+                        <i class="fa-solid fa-chevron-left back-to-login" style="cursor: pointer;"></i>
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <span class="home-title">Mi Hogar</span>
+                        <i class="fa-solid fa-chevron-down text-small"></i>
+                    </div>
+                    <div class="header-right">
+                        <i class="fa-solid fa-house-user"></i>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+            </header>
+
+            <main class="dashboard-content">
+                <h2 class="section-title">Panel Principal</h2>
+                <div class="panel-container">
+                    <div class="panel-grid">
+                        <div class="panel-card">
+                            <div class="card-info">
+                                <h3>Entorno de Sueño</h3>
+                                <p>mas información</p>
+                            </div>
+                            <i class="fa-solid fa-bed card-icon"></i>
+                        </div>
+                        <div class="panel-card">
+                            <div class="card-info">
+                                <h3>Multimedia</h3>
+                                <p>atajos</p>
+                            </div>
+                            <i class="fa-solid fa-music card-icon"></i>
+                        </div>
+                        <div class="panel-card">
+                            <div class="card-info">
+                                <h3>Energía</h3>
+                                <p>6.66 kwh</p>
+                            </div>
+                            <i class="fa-regular fa-lightbulb card-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section-title">Favoritos</h2>
+                <div class="favorite-card">
+                    <div class="fav-top">
+                        <i class="fa-solid fa-tv"></i>
+                        <i class="fa-solid fa-power-off power-btn"></i>
+                    </div>
+                    <div class="fav-bottom">
+                        <p class="fav-location">Sala de Estar</p>
+                        <h3>Samsung TV 65" de Julia</h3>
+                        <p class="fav-status">Betty la Fea</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <nav class="bottom-nav">
+            <div class="nav-item active">
+                <div class="nav-icon-bg light-blue">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <span>Hogar</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-solid fa-sitemap nav-icon-plain"></i>
+                <span>Dispositivos</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-solid fa-file-lines nav-icon-plain"></i>
+                <span>Vida</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-regular fa-circle-play nav-icon-plain"></i>
+                <span>Rutina</span>
+            </div>
+            <div class="nav-item">
+                <div class="nav-icon-bg dark-blue">
+                    <i class="fa-solid fa-list-ul"></i>
+                </div>
+                <span>Menu</span>
+            </div>
+        </nav>
+
+        <div class="home-indicator bottom-fixed"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
