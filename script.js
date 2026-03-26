@@ -52,6 +52,21 @@ document.addEventListener('DOMContentLoaded', () => {
         backBtnTeclado.addEventListener('click', () => { window.location.href = 'control-tv.html'; });
     }
 
+    const searchIconTV = document.querySelector('.search-icon-large');
+    if (searchIconTV) {
+        searchIconTV.addEventListener('click', () => { window.location.href = 'canales-tv.html'; });
+    }
+
+    const homeIconTV = document.querySelector('.btn-home-tv');
+    if (homeIconTV) {
+        homeIconTV.addEventListener('click', () => { window.location.href = 'canales-tv.html'; });
+    }
+
+    const powerBtnTV = document.querySelector('.power-btn-large');
+    if (powerBtnTV) {
+        powerBtnTV.addEventListener('click', () => { window.location.href = 'entorno-sueno.html'; });
+    }
+
     const navItems = document.querySelectorAll('.nav-item');
     navItems.forEach(item => {
         if (item.textContent.includes('Hogar')) {

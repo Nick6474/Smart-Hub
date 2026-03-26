@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart-Hub - Canales</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mobile-container">
+        <div class="main-curve-background dashboard-curve">
+            <header class="top-bar">
+                <div class="status-bar-mock">
+                    <span>9:30</span>
+                    <div class="status-icons">
+                        <i class="fa-solid fa-signal"></i>
+                        <i class="fa-solid fa-wifi"></i>
+                        <i class="fa-solid fa-battery-full"></i>
+                    </div>
+                </div>
+            </header>
+
+            <main class="dashboard-content">
+                <h2 class="section-title text-center" style="text-align: center; margin-bottom: 15px;">Canales Favoritos</h2>
+                
+                <div class="channels-container">
+                    
+                    <div class="channels-grid">
+                        <div class="channel-card">
+                            <span class="logo-caracol">CARACOL</span>
+                        </div>
+                        <div class="channel-card">
+                            <span class="logo-rcn">RCN</span>
+                        </div>
+                        <div class="channel-card">
+                            <span class="logo-telemundo">T</span>
+                        </div>
+                        <div class="channel-card">
+                            <span class="logo-netflix">N</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-otros">otros</button>
+
+                </div>
+            </main>
+        </div>
+
+        <nav class="bottom-nav">
+            <div class="nav-item">
+                <i class="fa-solid fa-house nav-icon-plain"></i>
+                <span>Hogar</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-solid fa-sitemap nav-icon-plain"></i>
+                <span>Dispositivos</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-solid fa-file-lines nav-icon-plain"></i>
+                <span>Vida</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-regular fa-circle-play nav-icon-plain"></i>
+                <span>Rutina</span>
+            </div>
+            <div class="nav-item">
+                <div class="nav-icon-bg dark-blue">
+                    <i class="fa-solid fa-list-ul"></i>
+                </div>
+                <span>Menu</span>
+            </div>
+        </nav>
+        <div class="home-indicator bottom-fixed"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

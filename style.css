@@ -850,3 +850,87 @@ body {
     color: var(--btn-primary);
     font-size: 24px;
 }
+
+/*Estilos del control de canales*/
+
+.channels-container {
+    background-color: var(--btn-primary);
+    border: 1px solid var(--text-main);
+    border-radius: 12px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 480px;
+    box-shadow: 2px 3px 0px rgba(0,0,0,0.3);
+}
+
+.channels-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    margin-bottom: 50px;
+}
+
+.channel-card {
+    background-color: var(--card-dark);
+    width: 90px;
+    height: 90px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 3px 6px rgba(0,0,0,0.4);
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.channel-card:active {
+    transform: translateY(2px);
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
+}
+
+.logo-caracol {
+    color: #004A98;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.logo-rcn {
+    color: #8CC63F;
+    font-weight: 900;
+    font-size: 24px;
+    font-style: italic;
+    text-shadow: 2px 0px #004A98;
+}
+
+.logo-telemundo {
+    color: #00B2E3;
+    font-weight: 900;
+    font-size: 45px;
+}
+
+.logo-netflix {
+    color: #E50914;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.btn-otros {
+    background-color: var(--card-dark);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 2px 3px 5px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+.btn-otros:active {
+    transform: translateY(2px);
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+}
